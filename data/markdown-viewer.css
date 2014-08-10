@@ -50,6 +50,28 @@ a:focus {
 	outline-offset: -2px;
 }
 
+/* Anchors */
+a.anchor {
+	color: #333;
+    display: inline-block;
+    position: relative;
+    right: 1em;
+    width: 0px;
+    font-size: .85em;
+    visibility: hidden;
+}
+a.anchor:hover,
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+	color: #333;
+	text-decoration: none;
+	visibility: visible;
+}
+
 /* Titles */
 h1 {
 	font-size: 36px;
