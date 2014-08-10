@@ -13,5 +13,5 @@
 ## TODO
 * Implement the stream conversion for x-markdown to text/html and application/x-genesis-rom to text/html ([see the master branch](https://github.com/Thiht/markdown-viewer/tree/master/components))
 * Default the encoding to UTF-8, and allow the user to choose his own default encoding
-* Mark the anchors github-like: ![Github anchor](https://cloud.githubusercontent.com/assets/1835170/3005699/325dba22-ddee-11e3-86b7-4501c35b1626.jpg)
+* Mark the anchors github-like: ![Github anchor](https://cloud.githubusercontent.com/assets/1835170/3005699/325dba22-ddee-11e3-86b7-4501c35b1626.jpg) (see [here](http://jsfiddle.net/f7dab2vq/) for an example)
 * Add a favicon (icon-16.png I guess)
