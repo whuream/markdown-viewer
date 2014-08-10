@@ -3,6 +3,8 @@ var markedContent       = marked(document.body.textContent.trim());
 document.body.innerHTML = markedContent;
 
 // Title
+// The title is set to the content of the first <hx> element found, or to the content of the first <p> found
+// It's limited to ~50 chars
 var firstTextBlock = document.querySelector("h1") || document.querySelector("h2") || document.querySelector("h3") || document.querySelector("h4") || document.querySelector("h5") || document.querySelector("h6") || document.querySelector("p");
 if (firstTextBlock !== null) {
 	document.title = firstTextBlock.textContent.trim().substr(0, 50);
