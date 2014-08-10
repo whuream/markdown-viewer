@@ -5,6 +5,10 @@
 * [Install the add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation) and activate it
 * Run the add-on with the command `cfx run` and generate an xpi with the command `cfx xpi` ([more on the cfx utility](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx))
 * Here you go, you're ready to add your own features!
+    - `lib/main.js` contains the launcher and some options
+    - `data/markdown-viewer.js` contains the processing
+    - `data/marked.js` and `data/highlight.pack.js` are libs, they should be modified only for updates
+    - `data/markdown-viewer.css` and `data/highlight.css` are the stylesheets for the module and for the syntax highlighter. highlight.css shouldn't be modified or updated
 
 ## TODO
 * Implement the stream conversion for x-markdown to text/html and application/x-genesis-rom to text/html ([see the master branch](https://github.com/Thiht/markdown-viewer/tree/master/components))
