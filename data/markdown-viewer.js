@@ -14,14 +14,11 @@ if (firstTextBlock !== null) {
 hljs.initHighlighting();
 
 // Anchors
-/*
-// Works, but not really beautiful
 var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 for (var i = headers.length - 1; i >= 0; i--) {
 	headers[i].id += "-" + i; // we add the number of the title because marked.js produces non unique ids
-	headers[i].innerHTML = '<a class="anchor" href="#' + headers[i].id + '">	🔗</a>' + headers[i].innerHTML;
+	headers[i].innerHTML = '<a class="anchor" href="#' + headers[i].id + '"><span class="anchor-icon"></span></a>' + headers[i].innerHTML;
 }
-*/
 
 // Favicon
 /*

@@ -2,12 +2,12 @@ body {
 	background-color: #fff;
 	color: #333;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.42857143;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 @media (min-width: 768px) {
@@ -51,45 +51,69 @@ a:focus {
 }
 
 /* Anchors */
-a.anchor {
-	color: #333;
-    display: inline-block;
-    position: relative;
-    right: 1em;
-    width: 0px;
-    font-size: .85em;
-    visibility: hidden;
+.anchor-icon:before {
+	content: "	🔗";
 }
-a.anchor:hover,
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
+.anchor-icon {
 	color: #333;
-	text-decoration: none;
-	visibility: visible;
+	display: none;
+	font-size: 20px;
+	vertical-align: middle;
 }
-
-/* Titles */
+.anchor {
+	display: block;
+	margin-left: -30px;
+	position: absolute;
+		bottom: 0px;
+		left: 0px;
+		top: 0px;
+	padding-left: 30px;
+	padding-right: 6px;
+}
+h1, h2, h3, h4, h5, h6 {
+	position: relative;
+	margin-bottom: 16px;
+	margin-top: 1em;
+	line-height: 1.4;
+}
 h1 {
-	font-size: 36px;
+	font-size: 2.25em;
+	line-height: 1.2;
 }
 h2 {
-	font-size: 30px;
+	font-size: 1.75em;
+	line-height: 1.225;
 }
 h3 {
-	font-size: 24px;
+	font-size: 1.5em;
+	line-height: 1.43;
 }
 h4 {
-	font-size: 18px;
+	font-size: 1.25em;
 }
 h5 {
-	font-size: 14px;
+	font-size: 1em;
 }
 h6 {
-	font-size: 12px;
+	font-size: 1em;
+}
+h1:hover .anchor-icon,
+h2:hover .anchor-icon,
+h3:hover .anchor-icon,
+h4:hover .anchor-icon,
+h5:hover .anchor-icon,
+h6:hover .anchor-icon {
+	display: inline-block;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+	padding-left: 8px;
+	margin-left: -30px;
+	line-height: 1;
 }
 
 /* Lists */
