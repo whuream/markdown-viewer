@@ -1,9 +1,15 @@
 # Markdown Viewer README
 A Markdown Viewer add-on for Firefox.
 
-The add-on is downloadable on [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/markdown-viewer/).
+## Modify
+The original css style is
 
-![Markdown Viewer rendering with an example file](http://i.imgur.com/iA5BaAu.png)
+> Modified and lightened version of Twitter Bootstrap, by Thiht
+
+I replaced it with [github-markdown-css](https://github.com/sindresorhus/github-markdown-css).
+
+And I think it's much more beautiful.
+
 
 ## Build
 * Download the current version
