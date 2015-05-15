@@ -81,7 +81,7 @@ if (!MarkdownViewer) {
                 }
                 
 				var textContent = document.documentElement.textContent,
-				    fragment = parseHTML(document, '<div class="container">'+marked(textContent)+'</div>', false, makeURI(document.location.href));
+				    fragment = parseHTML(document, '<article class="markdown-body">'+marked(textContent)+'</article>', false, makeURI(document.location.href));
 
 				while (document.body.firstChild) {
 					document.body.removeChild(document.body.firstChild);
@@ -99,6 +99,11 @@ if (!MarkdownViewer) {
 				meta.name = 'viewport';
 				meta.content = 'width=device-width, initial-scale=1';
 				document.head.appendChild(meta);
+
+                var style = document.createElement('style');
+                var t = document.createTextNode('.markdown-body{ min-width: 200px; max-width: 790px; margin: 0 auto; padding: 30px;}');
+                style.appendChild(t);
+                document.head.appendChild(style);
 
 				document.body.appendChild(fragment);
 			}
